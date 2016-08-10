@@ -1,0 +1,24 @@
+{% comment %} lms add so we can put the lastest  News article on front page {% endcomment %}
+{% comment %}{% for article in blogs.fiore-news.articles limit: 1 %}
+	<div class="block text size-large">
+    <div class="main{% if settings.lightbox_imgs %} lightboximages{% endif %}">
+      <h2 class="pagetitle">{{ article.title | link_to: article.url }}</h2>
+      {{ article.excerpt_or_content }}
+      <p class="fullarticle"><a href="{{ article.url }}">Full article &rarr;</a></p>
+    </div>
+    <div class="sub meta zig">
+    <div>
+    <span class="iconmeta author"> </span>
+      {% if article.comments_enabled? %}
+        <span class="iconmeta comment">
+        {% if article.comments_count > 0 %}
+          <a href="{{article.url}}#comments">{{ article.comments_count }} {{ article.comments_count | pluralize: 'comment', 'comments' }}</a>
+        {% else %}
+        <a href="{{article.url}}#comments">Add a comment</a>
+      {% endif %}
+      </span>
+    {% endif %}
+    </div>
+    </div>
+	</div>
+{% endfor %}{% endcomment %}

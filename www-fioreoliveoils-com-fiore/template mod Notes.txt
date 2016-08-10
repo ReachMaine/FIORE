@@ -1,0 +1,51 @@
+slideshows
+	- add to home page 
+	- add to category headings
+
+shipping pic on left sidebar
+
+social media icons 
+	- add Yankee Mag
+
+template mods to pages
+	- remove RSS
+	- remove tags
+
+template mods to blog/recipes (remove author, date, etc)
+	- remove RSS 
+	- remove author, date & tags
+
+template mods to product
+	- dont display price on block on home page
+
+added latest news module to front page
+
+mods on collections:
+	- remove social sharing on collections
+	
+--------------------------------
+3Mar2014 
+	Problem:  Custom Gift & personalized gift pack must be called in to order, not purchasable on line.
+		added flag meta-nonpurchasable on Custom Gift pack & Personalized
+		product.liquid check for flag non-purchasable dont display price or Add to cart.
+		snippets/product-block.liquid check for non-purchasable flag, dont display quick order expansion.  
+		
+
+20Mar2014
+	problem1: Hidden products
+		1. not show in all products
+			- create big collection of all products EXCEPT those for the knot.
+		2. not searchable from sitewide search. (for the Knot)
+			for products: add flag called meta-nosearch.
+			in search.liquid checked for product with tag = meta-nosearch OR page with url 'the-knot'
+		3. robots.txt & metatags.
+			in theme.liquid check for page title == "The Knot" or page slug =="knot" and then add
+				<meta name="robots" content="noindex, follow" />
+			ex:     {% if page.handle == 'fiore-wedding-event-favors' %}
+						<meta name="robots" content="noindex, nofollow" />
+					{% endif %}
+	[ ] Still need to hide the knot from the /products page which shows all categories (i think)	
+
+20May2014
+	in style.css.liquid  commented out the hide-note css (which was display: none) s.t. the cart note would always display
+	not just when click on 'add not to order' link. 

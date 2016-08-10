@@ -1,0 +1,179 @@
+Product Images
+	600 x 600
+
+	Questions to ask:
+		- New at FIORE sticker?
+		- suggested Pairings?
+		- on Home page?
+		
+To Add a product
+   1. find a similar product & duplicate it, and give it new name  or  add new
+   2.  modify any of the following if necessary.
+		a. Title
+		b. description
+		c. price
+		d. SKU
+
+		e. Image
+		f. Add to appropiate collections:  usually reflects the category in menu ex:  accessories.
+			eg.  EVOO's, Flavored oils,...
+		g.(if multiple sizes....)
+
+		g.(if one size....)
+			modify title s.t. it is the same as the product title.
+	3.  add link in navigation
+	        Online Store -> navigation
+	        - find the correct menu & add it as a product & select appropiate product
+		    - order s.t. in alphabetical
+			- save menu
+	4.  New at fiore sticker?
+	        add meta-label-New at FIORE! tag
+	5. add to fill your fusti in appropiate category.
+	        check price
+			- Title - usually add 2L after the name/title
+			-SKU is usually 303o
+			- Dont track
+			- weight: 4.0
+			- requires shipping
+	
+	
+To remove product
+	1. delete product OR set hidden 
+		product->visibility->hidden
+		notice what groups it's in.
+	2. check collections 
+		Collections->All Products (should be marked hidden)
+		Collections->Flavored EVOO as example (should be marked hidden) - REMOVE it.  Too confusing.
+	3. check menu items
+		Navigation->
+	4. check suggested pairings & other content (usually do search)
+		pages -> suggested Pairings
+	5. check fill your fusti DDL.
+		products -> fill your fusti (appropiate category) 
+	
+To make a product Not orderable, add flag 'meta-unpurchasable' flag 
+	(ex: Personalized Gift box or Custom gift box)
+
+To set up FREE Shipping.
+--------------------------
+
+	[1]- Shipping setup page
+		Settings -> Shipping
+		scroll down to Shipping rate for US - zone 1
+		- modify FREE Shipping rate from $100 to $0.
+		also adjust US - zone 2 Free Shipping & Canada Free Shipping
+		
+		
+		
+	[2] - put free shipping box at top of locations page (remove the free shipping on orders over $100).
+		Online store -> pages -> Locations
+		<div align="center">
+			<table border="0" cellpadding="5" cellspacing="0" width="90%" bgcolor="#8B2712">
+			<tbody>
+			<tr>
+			<td>
+			<h2 align="center"><span color="#FFFFFF" style="color: #ffffff;">FREE SHIPPING ON ALL ORDERS UNTIL TUESDAY, DECEMBER 18 at 5 P.M.</span></h2>
+			</td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+		
+		      ----- OR -----
+		<div style="border-style: solid; border-width: 1px; padding: 1px 4px 1px 4px;">
+		<h1><img style="float: right;" alt="Free Shipping!" src="//cdn.shopify.com/s/files/1/0226/4103/files/free-shipping.png?1603" hspace="6" vspace="6" />FREE Shipping is NOW!</h1>
+		<p>We're celebrating Spring! We are offering FREE SHIPPING UPS Ground/Standard) on all your orders through Friday, March 27, 2015 at 5 p.m.</p>
+		</div>
+		
+	[3] - modify shipping calculator heading 
+	        themes->customize->shipping->heading text.
+
+	
+		</h3><font color="#730703">If your order exceeds $100 you are eligible for <b>FREE  SHIPPING </b>in the USA and Canada.</font>
+	--- OR ----
+		<p>Get shipping estimates </p><table border="5" cellpadding="5" cellspacing="0" width="100%" bgcolor="#FFFFFF" bordercolor="#CF0101"> 	<tr> 		<td> 		<img src="https://cdn.shopify.com/s/files/1/0226/4103/files/free-shipping_ea805a84-f782-4195-b14d-40decfd9a693.png?3193" align="left"><b><font color="#204124">If your order exceeds $100 you are eligible for FREE SHIPPING in the USA and Canada.</font></b></td> 	</tr> </table>
+		
+	- ADD on the shipping calculator heading....something like.
+		settings->themes -> customize theme (box at top right hand side) ->shipping Rates calculator  
+		Edit Heading Text to include something like....
+	
+		FREE SHIPPING UPS Ground on all orders through Friday, March 27 <br> til 5 p.m.
+		<p>FREE SHIPPING UPS Ground on all orders through midnight Thursday, Feb. 4th</p>
+	
+		
+To take down FREE Shipping (see setting up free shipping for how to get to each of these) 
+----------------------------
+	[1] - take off Free Shipping box on home page (in locations page), put this back. 
+		<div style="border-style: solid; border-width: 1px; padding: 1px 4px 1px 4px;">
+			<h3 align="center"><span color="#730703" style="color: #730703;">SPEND $100, EARN FREE SHIPPING </span></h3>
+		</div>
+		      --- OR ---
+		<blockquote>
+			<h3 style="text-align: center;"><em><span color="#660000" style="color: #660000;">orders $100 and up ship FREE</span></em></h3>
+		</blockquote>
+
+		 
+		
+	[2] shipping setup page
+		- mod FREE shipping rate to $100 minimum 
+			in US & Canada
+	[3]  put $100 Free Shipping back on 
+	- https://fiore-oils.myshopify.com/admin/themes/4202657/settings
+	
+	[4]	Under Shipping Rates Calculator.  Add this to the end of the Heading Text.
+		</h3><font color="#730703">If your order exceeds $100 you are eligible for <b>FREE  SHIPPING </b>in the USA and Canada.</font>
+		
+
+To set product "out of stock"
+	1. add tag to product : 'meta-label-Out of Stock'
+	2. add to begininng of description 
+			TEMPORARILY OUT OF STOCK — 
+	3. for each variant, set inventory policy to : Shopify track & make sure the instock about is negative.
+
+
+			---------------------	
+Add SPEND $100 Free shipping on locations page
+	<div style="border-style: solid; border-width: 1px; padding: 1px 4px 1px 4px;"> <h3 align="center">
+	<span color="#730703" style="color: #730703;">SPEND $100, EARN FREE SHIPPING </div>
+
+FREE SHIPPING
+<div align="center">
+<table width="90%" bgcolor="#8B2712" border="0" cellpadding="5" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<h2 align="center"><span color="#FFFFFF" style="color: #ffffff;">FREE SHIPPING ON ALL ORDERS UNTIL WEDNESDAY, NOVEMBER 19 at 12 NOON.</span></h2>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+	
+To put a product on Home page
+-----------------------------------------	
+
+	- Products -> Collections -> add the product to the 'Fiore Artisan Olive Oils & Vinegars Collection' (Home page collection set in Themses -> setings -> homepage)
+
+To add a page to the home page
+	- Online store -> Navigation->  Add the page to the 'HomePageAdditions' Linked list.
+	
+
+	
+
+Make a product out of stock
+	- add TEMPORARILY OUT OF STOCK to end of the title 
+	- edit variant.  
+		inventory policy: Shopify Tracks this product
+		quantity:  -1
+
+		
+to take blog off homepage 
+   - edit template
+   - edit homepage-blogs.liquid,  comment every out 
+   
+   
+adding coupon/promo code
+   - Discounts -> 
+   
+adding Page to home page....  (Pages show as two columns)
+	Online Store -> Navigation -> HomePageAdditions

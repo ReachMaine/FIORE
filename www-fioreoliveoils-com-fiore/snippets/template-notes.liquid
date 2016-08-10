@@ -1,0 +1,10 @@
+{% comment %} 
+	Place to put my notes about change to template.
+
+3Mar2013  
+	Problem:  Custom Gift pack must be called in to order, not purchasable on line.
+		added flag non-purchasable on Custom Gift pack
+	    product.liquid check for flag non-purchasable dont display price or Add to cart.
+        assets/product-block.liquid check for non-purchasable flag, dont display quick order expansion. 
+		search.liquid - if item has non-purchasable tag, set no_quick_buy to true before calling product-block.
+{% endcomment %}
