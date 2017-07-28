@@ -57,7 +57,7 @@ To make a product Not orderable, add flag 'meta-unpurchasable' flag
 To set up FREE Shipping.
 --------------------------
 
-	[1]- Shipping setup page
+	[1]- Shipping setup page ( bottom of dark sidebar in admin area)
 		Settings -> Shipping
 		scroll down to Shipping rate for US - zone 1
 		- modify FREE Shipping rate from $100 to $0.
@@ -65,8 +65,8 @@ To set up FREE Shipping.
 		
 		
 		
-	[2] - put free shipping box at top of locations page (remove the free shipping on orders over $100).
-		Online store -> pages -> Locations
+	[2] - modify free shipping box on the home page (remove the free shipping on orders over $100).
+		Online store -> pages -> Free Shipping
 		<div align="center">
 			<table border="0" cellpadding="5" cellspacing="0" width="90%" bgcolor="#8B2712">
 			<tbody>
